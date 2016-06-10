@@ -12,7 +12,8 @@ GameObject:
   - 135: {fileID: 13532772}
   - 23: {fileID: 2339150}
   - 54: {fileID: 5477708}
-  m_Layer: 0
+  - 114: {fileID: 11467460}
+  m_Layer: 14
   m_Name: Dodgeball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,6 +81,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &11467460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13532772
 SphereCollider:
   m_ObjectHideFlags: 1
