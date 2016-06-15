@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEngine.VR;
 using VRStandardAssets.Utils;
 
 public class PickUpBall : MonoBehaviour {
@@ -8,6 +7,10 @@ public class PickUpBall : MonoBehaviour {
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Shader defaultShader;
 	[SerializeField] private Shader hoverShader;
+
+	public Transform holdLocation;
+	public float throwForce;
+
 
 
 	// Use this for initialization
@@ -17,8 +20,7 @@ public class PickUpBall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//hoverShader = Shader.Find ("Highlight");
-	
+
 	}
 
 	private void OnEnable()
@@ -49,7 +51,12 @@ public class PickUpBall : MonoBehaviour {
 
 	private void HandleClick()
 	{
-		Debug.Log ("Look and click brotha!");
+		if (m_InteractiveItem.GetComponent<Renderer> ().material.shader == hoverShader) 
+			{
+				Debug.Log ("Look and click brotha!");
+				//m_InteractiveItem.transform.position = new Vector3 (holdLocation);
+			m_InteractiveItem.GetComponent<Rigidbody>().velocity = m_InteractiveItem.transform.forward * throwForce;
+			}
 	}
 
 	private void HighlightObject()

@@ -107,6 +107,8 @@ MonoBehaviour:
   m_InteractiveItem: {fileID: 11467460}
   defaultShader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   hoverShader: {fileID: 4800000, guid: 7ced234fa189e4a74b3b903b1e0b2f43, type: 3}
+  holdLocation: {fileID: 0}
+  throwForce: 30
 --- !u!135 &13532772
 SphereCollider:
   m_ObjectHideFlags: 1
