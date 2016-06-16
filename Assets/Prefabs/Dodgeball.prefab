@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11494992}
   m_Layer: 14
   m_Name: Dodgeball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   hoverShader: {fileID: 4800000, guid: 7ced234fa189e4a74b3b903b1e0b2f43, type: 3}
   holdLocation: {fileID: 0}
   throwForce: 30
+  holdingball: 0
 --- !u!135 &13532772
 SphereCollider:
   m_ObjectHideFlags: 1

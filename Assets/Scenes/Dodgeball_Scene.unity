@@ -128,8 +128,58 @@ Prefab:
       propertyPath: m_Name
       value: Ball_Spawn (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11457612, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
+      propertyPath: waitSeconds
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &606032205
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.394
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 40.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 433824, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 180292, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &629825674
 Prefab:
@@ -382,6 +432,10 @@ Prefab:
       propertyPath: m_Name
       value: Ball_Spawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11457612, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
+      propertyPath: waitSeconds
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
   m_IsPrefabParent: 0
@@ -531,6 +585,10 @@ Prefab:
     - target: {fileID: 123378, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
       propertyPath: m_Name
       value: Ball_Spawn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457612, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}
+      propertyPath: waitSeconds
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2374e701ac13c4edeb152e7061c25a9e, type: 2}

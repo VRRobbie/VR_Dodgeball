@@ -6,14 +6,16 @@ public class Spawn_Object : MonoBehaviour {
 
 	public Transform spawnpoint;
 	public GameObject spawnObject;
+	public int waitSeconds;
 
 	void Start () 
 	{
-		Spawn ();
+		StartCoroutine (Spawn ());
 	}
 	
-	void Spawn ()
+	IEnumerator Spawn ()
 	{
+		yield return new WaitForSeconds(waitSeconds);
 		Instantiate (spawnObject, spawnpoint.position, spawnpoint.rotation);
 	}
 }

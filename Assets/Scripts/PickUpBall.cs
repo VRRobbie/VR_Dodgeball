@@ -8,14 +8,17 @@ public class PickUpBall : MonoBehaviour {
 	[SerializeField] private Shader defaultShader;
 	[SerializeField] private Shader hoverShader;
 
-	public Transform holdLocation;
+	public GameObject holdLocation;
 	public float throwForce;
+	public bool holdingball = false;
 
 
 
 	// Use this for initialization
 	void Start () {
-	
+		if (holdLocation == null)
+			holdLocation = GameObject.FindWithTag("HoldPosition");
+		
 	}
 	
 	// Update is called once per frame
@@ -54,8 +57,15 @@ public class PickUpBall : MonoBehaviour {
 		if (m_InteractiveItem.GetComponent<Renderer> ().material.shader == hoverShader) 
 			{
 				Debug.Log ("Look and click brotha!");
-				//m_InteractiveItem.transform.position = new Vector3 (holdLocation);
-			m_InteractiveItem.GetComponent<Rigidbody>().velocity = m_InteractiveItem.transform.forward * throwForce;
+				transform.parent = holdLocation.transform;
+				holdingball = true;
+
+			//while (holdingball) 
+			//{
+				//m_InteractiveItem.transform.parent = holdLocation.transform;
+			//	m_InteractiveItem.transform.localPosition = new Vector3 (0, 0, 0);
+			//}
+				//m_InteractiveItem.GetComponent<Rigidbody>().velocity = m_InteractiveItem.transform.forward * throwForce;
 			}
 	}
 

@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 18, z: 46}
+  m_LocalPosition: {x: 1, y: 20, z: 46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -42,6 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnpoint: {fileID: 431098}
   spawnObject: {fileID: 179380, guid: 304291275e2514bcfb7a01794eda5deb, type: 2}
+  waitSeconds: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
