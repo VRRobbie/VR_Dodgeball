@@ -8,6 +8,7 @@ public class PickUpBall : MonoBehaviour {
 	[SerializeField] private Shader defaultShader;
 	[SerializeField] private Shader hoverShader;
 
+	public Rigidbody rb;
 	public GameObject holdLocation;
 	public float throwForce;
 	public bool holdingball = false;
@@ -17,13 +18,18 @@ public class PickUpBall : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (holdLocation == null)
-			holdLocation = GameObject.FindWithTag("HoldPosition");
-		
+		{
+			holdLocation = GameObject.FindWithTag ("HoldPosition");
+		}
+		rb = GetComponent<Rigidbody> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+	void Update ()
+	{
+		if (holdingball && Input.GetMouseButtonDown (0)) 
+		{
+			ThrowBall ();
+		}
 	}
 
 	private void OnEnable()
@@ -54,19 +60,26 @@ public class PickUpBall : MonoBehaviour {
 
 	private void HandleClick()
 	{
-		if (m_InteractiveItem.GetComponent<Renderer> ().material.shader == hoverShader) 
-			{
-				Debug.Log ("Look and click brotha!");
-				transform.parent = holdLocation.transform;
-				holdingball = true;
+		if (!holdingball && holdLocation.transform.childCount < 1) 
+		{
+			Debug.Log ("Picked up ball");
+			m_InteractiveItem.transform.parent = holdLocation.transform;
+			m_InteractiveItem.transform.position = holdLocation.transform.position;
+			holdingball = true;
+		}
+		if (holdingball) 
+		{
+			rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+		}
+	}
 
-			//while (holdingball) 
-			//{
-				//m_InteractiveItem.transform.parent = holdLocation.transform;
-			//	m_InteractiveItem.transform.localPosition = new Vector3 (0, 0, 0);
-			//}
-				//m_InteractiveItem.GetComponent<Rigidbody>().velocity = m_InteractiveItem.transform.forward * throwForce;
-			}
+	private void ThrowBall()
+	{
+			holdingball = false;
+			m_InteractiveItem.transform.parent = null;
+			rb.constraints = RigidbodyConstraints.None;
+		m_InteractiveItem.GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * throwForce;
+
 	}
 
 	private void HighlightObject()

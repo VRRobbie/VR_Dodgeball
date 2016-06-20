@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 458538}
   - 33: {fileID: 3327926}
   - 135: {fileID: 13532772}
-  - 23: {fileID: 2339150}
-  - 54: {fileID: 5477708}
-  - 114: {fileID: 11467460}
-  - 114: {fileID: 11494992}
+  - 23: {fileID: 2370336}
+  - 54: {fileID: 5467940}
+  - 114: {fileID: 11433828}
+  - 114: {fileID: 11493340}
   m_Layer: 14
   m_Name: Dodgeball
   m_TagString: Ball
@@ -34,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2339150
+--- !u!23 &2370336
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,7 +67,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179380}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5477708
+--- !u!54 &5467940
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -82,7 +82,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11467460
+--- !u!114 &11433828
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11494992
+--- !u!114 &11493340
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,9 +104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f251da6eb2447739ad7b30b413c71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractiveItem: {fileID: 11467460}
+  m_InteractiveItem: {fileID: 11433828}
   defaultShader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   hoverShader: {fileID: 4800000, guid: 7ced234fa189e4a74b3b903b1e0b2f43, type: 3}
+  rb: {fileID: 5467940}
   holdLocation: {fileID: 0}
   throwForce: 30
   holdingball: 0
