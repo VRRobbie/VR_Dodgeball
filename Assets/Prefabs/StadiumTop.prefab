@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3346670}
   - 64: {fileID: 6484548}
   - 23: {fileID: 2339424}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3354598}
   - 64: {fileID: 6466330}
   - 23: {fileID: 2322358}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Side 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 33: {fileID: 3378196}
   - 64: {fileID: 6469228}
   - 23: {fileID: 2393738}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Side 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - 33: {fileID: 3349292}
   - 64: {fileID: 6474388}
   - 23: {fileID: 2360726}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - 33: {fileID: 3340162}
   - 64: {fileID: 6482330}
   - 23: {fileID: 2304006}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Side1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 3366148}
   - 64: {fileID: 6482702}
   - 23: {fileID: 2365146}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Side 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
