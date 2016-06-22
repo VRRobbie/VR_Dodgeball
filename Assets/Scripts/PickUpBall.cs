@@ -5,8 +5,8 @@ using VRStandardAssets.Utils;
 public class PickUpBall : MonoBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
-	[SerializeField] private Shader defaultShader;
-	[SerializeField] private Shader hoverShader;
+	[SerializeField] private Material defaultMaterial;
+	[SerializeField] private Material hoverMaterial;
 
 	public Rigidbody rb;
 	public GameObject holdLocation;
@@ -84,11 +84,11 @@ public class PickUpBall : MonoBehaviour {
 
 	private void HighlightObject()
 	{
-		m_InteractiveItem.GetComponent<Renderer> ().material.shader = hoverShader;
+		m_InteractiveItem.GetComponent<Renderer> ().material = hoverMaterial;
 	}
 
 	private void DeHighlightObject()
 	{
-		m_InteractiveItem.GetComponent<Renderer> ().material.shader = defaultShader;
+		m_InteractiveItem.GetComponent<Renderer> ().material = defaultMaterial;
 	}
 }

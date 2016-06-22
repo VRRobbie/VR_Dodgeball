@@ -5,10 +5,10 @@
 		_Color ("Main Color", Color) = (1,1,1,1)
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		
-		_MKGlowColor ("Glow Color", Color) = (1,1,1,1)
+		_MKGlowColor ("Glow Color", Color) = (1,255,1,1)
 		_MKGlowPower ("Glow Power", Range(0.0,2.5)) = 1.0
 		_MKGlowTex ("Glow Texture", 2D) = "black" {}
-		_MKGlowTexColor ("Glow Texture Color", Color) = (1,1,1,1)
+		_MKGlowTexColor ("Glow Texture Color", Color) = (1,255,1,1)
 		_MKGlowTexStrength ("Glow Texture Strength ", Range(0.0,10.0)) = 1.0
 		_MKGlowOffSet ("Glow Width ", Range(0.0,0.075)) = 0.0
 	}
