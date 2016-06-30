@@ -109,7 +109,7 @@ MonoBehaviour:
   hoverMaterial: {fileID: 2100000, guid: 4235f1a55c9d5ea4b81c7e4575db22d9, type: 2}
   rb: {fileID: 5467940}
   holdLocation: {fileID: 0}
-  throwForce: 50
+  throwForce: 0.5
   holdingball: 0
 --- !u!135 &13532772
 SphereCollider:

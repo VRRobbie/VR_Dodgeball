@@ -78,8 +78,8 @@ public class PickUpBall : MonoBehaviour {
 			holdingball = false;
 			m_InteractiveItem.transform.parent = null;
 			rb.constraints = RigidbodyConstraints.None;
-		m_InteractiveItem.GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * throwForce;
-
+			//m_InteractiveItem.GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * throwForce;
+			m_InteractiveItem.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce * Time.deltaTime, ForceMode.Impulse);
 	}
 
 	private void HighlightObject()
