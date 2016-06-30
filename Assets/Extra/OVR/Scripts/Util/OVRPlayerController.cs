@@ -21,12 +21,13 @@ limitations under the License.
 
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Networking;
 
 /// <summary>
 /// Controls the player's movement in virtual reality.
 /// </summary>
 [RequireComponent(typeof(CharacterController))]
-public class OVRPlayerController : MonoBehaviour
+public class OVRPlayerController : NetworkBehaviour
 {
 	/// <summary>
 	/// The rate acceleration during movement.

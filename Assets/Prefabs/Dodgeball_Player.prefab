@@ -277,6 +277,7 @@ GameObject:
   - 114: {fileID: 11438292}
   - 114: {fileID: 11453974}
   - 114: {fileID: 11420462}
+  - 114: {fileID: 11441468}
   m_Layer: 0
   m_Name: Dodgeball_Player
   m_TagString: Untagged
@@ -1024,6 +1025,21 @@ MonoBehaviour:
   fadeInTexture: {fileID: 0}
   speedRotationIncrement: 0.05
   layerName: Default
+--- !u!114 &11441468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cb947b19a6245cfaa88c67a07bd0f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
+  - {fileID: 11442968}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11442968
 MonoBehaviour:
   m_ObjectHideFlags: 1
