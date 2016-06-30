@@ -14,6 +14,8 @@ GameObject:
   - 54: {fileID: 5467940}
   - 114: {fileID: 11433828}
   - 114: {fileID: 11493340}
+  - 114: {fileID: 11476906}
+  - 114: {fileID: 11441660}
   m_Layer: 14
   m_Name: Dodgeball
   m_TagString: Ball
@@ -93,6 +95,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11441660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &11476906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 48
+    i1: 66
+    i2: 145
+    i3: 39
+    i4: 94
+    i5: 37
+    i6: 20
+    i7: 188
+    i8: 251
+    i9: 122
+    i10: 1
+    i11: 121
+    i12: 78
+    i13: 218
+    i14: 93
+    i15: 235
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &11493340
 MonoBehaviour:
   m_ObjectHideFlags: 1
