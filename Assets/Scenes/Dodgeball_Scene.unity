@@ -220,6 +220,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11476810, guid: a22dca5993ad34653b5084a6f86aae86, type: 2}
+      propertyPath: spawnpoint
+      value: 
+      objectReference: {fileID: 665590238}
+    - target: {fileID: 11476810, guid: a22dca5993ad34653b5084a6f86aae86, type: 2}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 180292, guid: cb362f585231c6c4083bdbc9858b78ce, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a22dca5993ad34653b5084a6f86aae86, type: 2}
   m_IsPrefabParent: 0
@@ -238,6 +246,10 @@ MonoBehaviour:
   m_Script: {fileID: -1050975500, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &665590238 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 452182, guid: a22dca5993ad34653b5084a6f86aae86, type: 2}
+  m_PrefabInternal: {fileID: 665590235}
 --- !u!1001 &996150971
 Prefab:
   m_ObjectHideFlags: 0
