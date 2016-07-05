@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Networking;
 
-public class Spawn_Object_Network : NetworkBehaviour {
+public class SpawnObject : MonoBehaviour {
 
 
 	public Transform spawnpoint;
@@ -18,6 +17,5 @@ public class Spawn_Object_Network : NetworkBehaviour {
 	{
 		yield return new WaitForSeconds(waitSeconds);
 		Instantiate (spawnObject, spawnpoint.position, spawnpoint.rotation);
-		//NetworkServer.Spawn (spawnObject);
 	}
 }

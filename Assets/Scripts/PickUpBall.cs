@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using VRStandardAssets.Utils;
+using UnityEngine.Networking;
 
-public class PickUpBall : MonoBehaviour {
+public class PickUpBall : NetworkBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Material defaultMaterial;
