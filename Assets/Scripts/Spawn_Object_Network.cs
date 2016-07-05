@@ -13,7 +13,7 @@ public class Spawn_Object_Network : NetworkBehaviour {
 	{
 		StartCoroutine (Spawn ());
 	}
-	
+		
 	IEnumerator Spawn ()
 	{
 		yield return new WaitForSeconds(waitSeconds);

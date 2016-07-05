@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 431098}
   - 114: {fileID: 11461566}
-  - 114: {fileID: 11433210}
+  - 114: {fileID: 11487570}
   m_Layer: 0
   m_Name: Ball_Spawn
   m_TagString: Untagged
@@ -24,26 +24,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 20, z: 46}
+  m_LocalPosition: {x: 3, y: 17, z: 46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11433210
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 208197bf987ab0047a9e1ff8053f0f74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 431098}
-  spawnObject: {fileID: 179380, guid: 304291275e2514bcfb7a01794eda5deb, type: 2}
-  waitSeconds: 2
 --- !u!114 &11461566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -76,6 +62,20 @@ MonoBehaviour:
     i15: 158
   m_ServerOnly: 1
   m_LocalPlayerAuthority: 0
+--- !u!114 &11487570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208197bf987ab0047a9e1ff8053f0f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnpoint: {fileID: 431098}
+  spawnObject: {fileID: 179380, guid: 304291275e2514bcfb7a01794eda5deb, type: 2}
+  waitSeconds: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
