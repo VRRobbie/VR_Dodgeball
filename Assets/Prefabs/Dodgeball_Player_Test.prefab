@@ -18,6 +18,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &135724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 447892}
+  m_Layer: 0
+  m_Name: Ball_Hold_Position
+  m_TagString: HoldPosition
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &158798
 GameObject:
   m_ObjectHideFlags: 1
@@ -68,8 +83,10 @@ GameObject:
   - 82: {fileID: 8219186}
   - 114: {fileID: 11492516}
   - 114: {fileID: 11421768}
+  - 114: {fileID: 11418202}
+  - 114: {fileID: 11423456}
   m_Layer: 0
-  m_Name: Player_Test
+  m_Name: Dodgeball_Player_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,6 +119,19 @@ Transform:
   - {fileID: 402686}
   m_Father: {fileID: 490400}
   m_RootOrder: 1
+--- !u!4 &447892
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135724}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 490400}
+  m_RootOrder: 2
 --- !u!4 &460724
 Transform:
   m_ObjectHideFlags: 1
@@ -128,6 +158,7 @@ Transform:
   m_Children:
   - {fileID: 460724}
   - {fileID: 429782}
+  - {fileID: 447892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!20 &2051392
@@ -338,6 +369,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &11418202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 4
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &11421768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -351,7 +402,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capsulePlayer: {fileID: 185346}
   glassesPlayer: {fileID: 158798}
-  componentsToDisable: []
+  componentsToDisable:
+  - {fileID: 11442582}
+  - {fileID: 2051392}
+  - {fileID: 8219186}
+--- !u!114 &11423456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a5f9db301566b40a1e81a8c39013e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dodgeballPrefab: {fileID: 179380, guid: 304291275e2514bcfb7a01794eda5deb, type: 2}
+  dodgeballSpawn: {fileID: 447892}
+  throwForce: 0.5
 --- !u!114 &11442582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -478,7 +546,7 @@ MonoBehaviour:
     i14: 60
     i15: 27
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!124 &12468490
 Behaviour:
   m_ObjectHideFlags: 1
