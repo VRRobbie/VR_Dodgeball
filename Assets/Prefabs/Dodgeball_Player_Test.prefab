@@ -419,7 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dodgeballPrefab: {fileID: 179380, guid: 304291275e2514bcfb7a01794eda5deb, type: 2}
   dodgeballSpawn: {fileID: 447892}
-  throwForce: 0.5
+  throwForce: 2
 --- !u!114 &11442582
 MonoBehaviour:
   m_ObjectHideFlags: 1
